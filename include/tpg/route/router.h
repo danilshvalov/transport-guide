@@ -9,9 +9,9 @@
 #include <utility>
 #include <vector>
 
-#include "graph.h"
+#include "tpg/route/graph.h"
 
-namespace Graph {
+namespace tpg::route {
 
 template<typename Weight>
 class Router {
@@ -153,4 +153,4 @@ void Router<Weight>::ReleaseRoute(RouteId route_id) {
     expanded_routes_cache_.erase(route_id);
 }
 
-}  // namespace Graph
+}  // namespace tpg::route

@@ -4,6 +4,8 @@
 #include <deque>
 #include <vector>
 
+namespace tpg {
+
 template<typename It>
 class Range {
   public:
@@ -22,7 +24,9 @@ class Range {
     It end_;
 };
 
-namespace Graph {
+}  // namespace tpg
+
+namespace tpg::route {
 
 using VertexId = size_t;
 using EdgeId = size_t;
@@ -88,4 +92,4 @@ DirectedWeightedGraph<Weight>::GetIncidentEdges(VertexId vertex) const {
     const auto& edges = incidence_lists_[vertex];
     return {std::begin(edges), std::end(edges)};
 }
-}  // namespace Graph
+}  // namespace tpg::route

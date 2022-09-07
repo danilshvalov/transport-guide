@@ -2,7 +2,7 @@
 
 using namespace std;
 
-namespace Json {
+namespace tpg::json {
 
 Document::Document(Node root) : root(move(root)) {}
 
@@ -76,4 +76,4 @@ Document Load(istream& input) {
     return Document {LoadNode(input)};
 }
 
-}  // namespace Json
+}  // namespace tpg::json
