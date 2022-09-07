@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.24)
 project(tpg)
 
+enable_testing()
+add_subdirectory(tests)
+
 file(GLOB_RECURSE SOURCE_FILES CONFIGURE_DEPENDS src/*.cpp)
 
 set(TARGET_NAME tpg)
