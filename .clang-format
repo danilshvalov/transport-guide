@@ -1,0 +1,4 @@
+BasedOnStyle: Chromium
+DerivePointerAlignment: false
+IncludeBlocks: Preserve
+IndentWidth: 4
